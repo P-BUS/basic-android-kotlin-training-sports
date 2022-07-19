@@ -53,7 +53,7 @@
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/sportsImage"
+            app:layout_constraintStart_toEndOf="@id/sportsImage"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/title_placeholder" />
 
@@ -66,8 +66,8 @@
             android:padding="8dp"
             android:text="@string/news_title"
             android:textColor="?android:textColorSecondary"
-            app:layout_constraintStart_toEndOf="@+id/sportsImage"
-            app:layout_constraintTop_toBottomOf="@+id/title" />
+            app:layout_constraintStart_toEndOf="@id/sportsImage"
+            app:layout_constraintTop_toBottomOf="@id/title" />
 
         <TextView
             android:id="@+id/sub_title"

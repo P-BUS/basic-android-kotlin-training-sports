@@ -43,7 +43,9 @@ class SportsListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         val binding = FragmentSportsListBinding.bind(view)
+
         val slidingPaneLayout = binding.slidingPaneLayout
         slidingPaneLayout.lockMode = SlidingPaneLayout.LOCK_MODE_LOCKED
         // Connect the SlidingPaneLayout to the system back button.
@@ -60,6 +62,10 @@ class SportsListFragment : Fragment() {
             // Slide the detail pane into view. If both panes are visible,
             // this has no visible effect.
             binding.slidingPaneLayout.openPane()
+
+            // Navigate to the details screen
+            //val action = SportsListFragmentDirections.actionSportsListFragmentToNewsFragment()
+            //this.findNavController().navigate(action)
         }
         binding.recyclerView.adapter = adapter
         adapter.submitList(sportsViewModel.sportsData)
